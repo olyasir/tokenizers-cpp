@@ -34,6 +34,10 @@ class HFTokenizer : public Tokenizer {
     return std::vector<int32_t>(data, data + len);
   }
 
+  std::vector<std::string> EncodeAsText(const std::string& text) final override {
+    return { };
+  }
+
   // use i32 to be consistent with sentencepiece
   std::string Decode(const std::vector<int32_t>& ids) final {
     bool skip_special_token = false;
