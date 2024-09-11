@@ -1,7 +1,7 @@
 [submodule "msgpack"]
 	path = msgpack
-	url = https://github.com/msgpack/msgpack-c
+	url = ../../msgpack/msgpack-c
 [submodule "sentencepiece"]
 	path = sentencepiece
-	url = git@github.com:tetherto/sentencepiece.git
+	url = ../sentencepiece.git
 	branch = base/v1
