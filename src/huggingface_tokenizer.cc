@@ -40,10 +40,6 @@ class HFTokenizer : public Tokenizer {
     return ret;
   }
 
-  std::vector<std::string> EncodeAsText(const std::string& text) final override {
-    return { };
-  }
-
   // use i32 to be consistent with sentencepiece
   std::vector<int32_t> Encode(const std::string& text) final { return Encode(text, false); }
 

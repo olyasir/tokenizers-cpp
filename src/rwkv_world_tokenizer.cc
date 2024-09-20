@@ -95,10 +95,6 @@ class RWKVWorldTokenizer : public Tokenizer {
     return ids;
   }
 
-  std::vector<std::string> EncodeAsText(const std::string& text) final override {
-    return { };
-  }
-
   std::string Decode(const std::vector<int32_t>& ids) final {
     std::string str;
     for (auto id : ids) {
